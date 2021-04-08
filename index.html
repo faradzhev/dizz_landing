@@ -9,14 +9,20 @@
         top: 0; right: 0; bottom: 0; left: 0;
         z-index: -1;
       }
-      #title {position:fixed;top:40%;left:calc(50% - 200px);width:400px}
+      #title, #soon {position:fixed}
+      #title {top:calc(50% - 50px);left:calc(50% - 200px);width:400px}
+      #soon {bottom:50px;left:calc(50% - 250px);width:500px;-webkit-animation: fadein 4s infinite}
+      @-webkit-keyframes fadein{
+        0% { opacity: 0; }
+        50% { opacity: 1; }
+        100% { opacity: 0; }
+      }
     </style>
     <meta charset="utf-8">
     <title>Dizzcount | Coming Soon...</title>
   </head>
   <body>
-    <img src="" alt="">
-    <img id="title" src="title-f7ed7tf4gi.svg" alt="">
-    <img src="" alt="">
+    <img id="title" src="title-f7ed7tf4gi.svg" alt="Dizzcount, Web & Mobile App">
+    <img id="soon" src="soon-ywfeudf23f.svg" alt="Coming Soon...">
   </body>
 </html>
